@@ -1,0 +1,196 @@
+uk.co.mevanspn.gui.BadIconResourceException -> uk.co.mevanspn.a.g:
+uk.co.mevanspn.gui.ImagePanel -> uk.co.mevanspn.a.c:
+    java.awt.image.BufferedImage image -> a
+    float zoom -> b
+    boolean wheel_zoom_enabled -> c
+    boolean zoom_icons_visible -> d
+    boolean drag_scroll_active -> e
+    boolean mouse_outside -> f
+    int last_x -> g
+    int last_y -> h
+    int zoom_icons_corner -> i
+    int max_icon_height -> j
+    int mouse_x -> k
+    int mouse_y -> l
+    uk.co.mevanspn.gui.ImageZoomListener client -> m
+    java.util.Vector zoom_icons -> n
+    boolean scroll_bar_active -> o
+    java.awt.Point corner_origin -> p
+    uk.co.mevanspn.gui.ImagePanel$TransitionManager trans_man -> q
+    java.awt.Rectangle last_view_rectangle -> r
+    void setScrollBarActive(boolean) -> a
+    void setImage(java.awt.image.BufferedImage) -> a
+    java.awt.image.BufferedImage getImage() -> a
+    boolean dragScrollActive() -> b
+    void configureZoomIcons() -> c
+    void setZoom(float) -> a
+    float getZoom() -> d
+    void zoomIn() -> e
+    void zoomOut() -> f
+    void setWheelZoomEnabled(boolean) -> b
+    void registerZoomIcon(uk.co.mevanspn.gui.ZoomIconControl) -> a
+    void setZoomIconsCorner(int) -> a
+    void paint(java.awt.Graphics) -> paint
+    java.awt.Dimension getPreferredSize() -> getPreferredSize
+    java.awt.Dimension getPreferredScrollableViewportSize() -> getPreferredScrollableViewportSize
+    int getScrollableUnitIncrement(java.awt.Rectangle,int,int) -> getScrollableUnitIncrement
+    int getScrollableBlockIncrement(java.awt.Rectangle,int,int) -> getScrollableBlockIncrement
+    boolean getScrollableTracksViewportWidth() -> getScrollableTracksViewportWidth
+    boolean getScrollableTracksViewportHeight() -> getScrollableTracksViewportHeight
+    void mouseClicked(java.awt.event.MouseEvent) -> mouseClicked
+    void mousePressed(java.awt.event.MouseEvent) -> mousePressed
+    void mouseReleased(java.awt.event.MouseEvent) -> mouseReleased
+    void mouseEntered(java.awt.event.MouseEvent) -> mouseEntered
+    void mouseExited(java.awt.event.MouseEvent) -> mouseExited
+    void mouseDragged(java.awt.event.MouseEvent) -> mouseDragged
+    void mouseMoved(java.awt.event.MouseEvent) -> mouseMoved
+    void mouseWheelMoved(java.awt.event.MouseWheelEvent) -> mouseWheelMoved
+    void componentShown(java.awt.event.ComponentEvent) -> componentShown
+    void componentHidden(java.awt.event.ComponentEvent) -> componentHidden
+    void componentResized(java.awt.event.ComponentEvent) -> componentResized
+    void componentMoved(java.awt.event.ComponentEvent) -> componentMoved
+    boolean access$002(uk.co.mevanspn.gui.ImagePanel,boolean) -> a
+    boolean access$000(uk.co.mevanspn.gui.ImagePanel) -> a
+uk.co.mevanspn.gui.ImagePanel$TransitionManager -> uk.co.mevanspn.a.d:
+    boolean update -> a
+    boolean forced_to_die -> b
+    float control_opacity -> c
+    float transition_speed -> d
+    uk.co.mevanspn.gui.ImagePanel this$0 -> e
+    void run() -> run
+    float getControlOpacity() -> a
+    void setControlOpacity(float) -> a
+    void beginTransition(float) -> b
+uk.co.mevanspn.gui.ImagePreviewPanel -> uk.co.mevanspn.a.f:
+    uk.co.mevanspn.gui.ImagePanel image_panel -> a
+    java.util.Vector zoom_listeners -> b
+    void setImage(java.awt.image.BufferedImage) -> a
+    java.awt.image.BufferedImage getImage() -> a
+    void setZoom(float) -> a
+    float getZoom() -> b
+    void setWheelZoomEnabled(boolean) -> a
+    void addImageZoomListener(uk.co.mevanspn.gui.ImageZoomListener) -> a
+    void registerZoomIcon(uk.co.mevanspn.gui.ZoomIconControl) -> a
+    void zoomChanged(float,uk.co.mevanspn.gui.ZoomManager) -> a
+    uk.co.mevanspn.gui.ImagePanel access$000(uk.co.mevanspn.gui.ImagePreviewPanel) -> a
+uk.co.mevanspn.gui.ImagePreviewPanel$1 -> uk.co.mevanspn.a.h:
+    uk.co.mevanspn.gui.ImagePreviewPanel this$0 -> a
+    void stateChanged(javax.swing.event.ChangeEvent) -> stateChanged
+uk.co.mevanspn.gui.ImagePreviewPanel$2 -> uk.co.mevanspn.a.j:
+    uk.co.mevanspn.gui.ImagePreviewPanel this$0 -> a
+    void adjustmentValueChanged(java.awt.event.AdjustmentEvent) -> adjustmentValueChanged
+uk.co.mevanspn.gui.ImagePreviewPanel$3 -> uk.co.mevanspn.a.i:
+    uk.co.mevanspn.gui.ImagePreviewPanel this$0 -> a
+    void adjustmentValueChanged(java.awt.event.AdjustmentEvent) -> adjustmentValueChanged
+uk.co.mevanspn.gui.ImageZoomListener -> uk.co.mevanspn.a.b:
+    void zoomChanged(float,uk.co.mevanspn.gui.ZoomManager) -> a
+uk.co.mevanspn.gui.ZoomIconControl -> uk.co.mevanspn.a.e:
+    java.awt.image.BufferedImage active_icon -> a
+    java.awt.image.BufferedImage inactive_icon -> b
+    float zoom_factor -> c
+    boolean fixed_zoom -> d
+    java.awt.Point origin -> e
+    java.awt.image.BufferedImage getResource(java.lang.String) -> a
+    int getWidth() -> a
+    int getHeight() -> b
+    void setOrigin(java.awt.Point) -> a
+    java.awt.Point getOrigin() -> c
+    java.awt.image.BufferedImage getImage(int,int) -> a
+    float getZoom() -> d
+uk.co.mevanspn.gui.ZoomManager -> uk.co.mevanspn.a.a:
+uk.co.mevanspn.imgext.Bitmap -> uk.co.mevanspn.imgext.b:
+    java.awt.image.BufferedImage source_image -> a
+    int lowCr -> b
+    int lowCb -> c
+    int highCr -> d
+    int highCb -> e
+    java.awt.image.BufferedImage getCompressPreview(int,int,int,int) -> a
+    int getCrDiff(int) -> a
+    int getCbDiff(int) -> b
+uk.co.mevanspn.imgext.ImageFileFilter -> uk.co.mevanspn.imgext.d:
+    uk.co.mevanspn.imgext.ImageFileFilter$Filter[] filters -> a
+    boolean accept(java.io.File) -> accept
+    java.lang.String getDescription() -> getDescription
+uk.co.mevanspn.imgext.ImageFileFilter$Filter -> uk.co.mevanspn.imgext.g:
+    java.lang.String extension -> a
+    java.lang.String getExtension() -> a
+uk.co.mevanspn.imgext.MainForm -> uk.co.mevanspn.imgext.c:
+    int last_lum_bits -> a
+    int last_chr_bits -> b
+    int last_Bx -> c
+    int last_By -> d
+    uk.co.mevanspn.imgext.Bitmap b -> e
+    javax.swing.JComboBox cmbZoom -> f
+    uk.co.mevanspn.gui.ImagePreviewPanel ippOutput -> g
+    uk.co.mevanspn.gui.ImagePreviewPanel ippSource -> h
+    javax.swing.JLabel jLabel1 -> i
+    javax.swing.JLabel jLabel2 -> j
+    javax.swing.JLabel jLabel3 -> k
+    javax.swing.JLabel jLabel4 -> l
+    javax.swing.JLabel jLabel5 -> m
+    javax.swing.JPanel jPanel1 -> n
+    javax.swing.JSeparator jSeparator1 -> o
+    javax.swing.JLabel lblStatus -> p
+    javax.swing.JMenuBar mbMain -> q
+    javax.swing.JMenuItem mniOpen -> r
+    javax.swing.JMenuItem mniQuit -> s
+    javax.swing.JMenuItem mniSave -> t
+    javax.swing.JMenu mnuFIle -> u
+    javax.swing.JPanel pnlStatus -> v
+    javax.swing.JSlider sldBx -> w
+    javax.swing.JSlider sldBy -> x
+    javax.swing.JSlider sldChrBits -> y
+    javax.swing.JSlider sldLumBits -> z
+    javax.swing.JToolBar tbMain -> A
+    void changeStatus() -> a
+    int getBitLength(int) -> a
+    void zoomChanged(float,uk.co.mevanspn.gui.ZoomManager) -> a
+    void access$000(uk.co.mevanspn.imgext.MainForm,javax.swing.event.ChangeEvent) -> a
+    void access$100(uk.co.mevanspn.imgext.MainForm,javax.swing.event.ChangeEvent) -> b
+    void access$200(uk.co.mevanspn.imgext.MainForm,javax.swing.event.ChangeEvent) -> c
+    void access$300(uk.co.mevanspn.imgext.MainForm,javax.swing.event.ChangeEvent) -> d
+    void access$400(uk.co.mevanspn.imgext.MainForm,java.awt.event.ItemEvent) -> a
+    void access$500(uk.co.mevanspn.imgext.MainForm,java.awt.event.ActionEvent) -> a
+    void access$600(uk.co.mevanspn.imgext.MainForm,java.awt.event.ActionEvent) -> b
+uk.co.mevanspn.imgext.MainForm$1 -> uk.co.mevanspn.imgext.j:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void stateChanged(javax.swing.event.ChangeEvent) -> stateChanged
+uk.co.mevanspn.imgext.MainForm$2 -> uk.co.mevanspn.imgext.i:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void stateChanged(javax.swing.event.ChangeEvent) -> stateChanged
+uk.co.mevanspn.imgext.MainForm$3 -> uk.co.mevanspn.imgext.l:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void stateChanged(javax.swing.event.ChangeEvent) -> stateChanged
+uk.co.mevanspn.imgext.MainForm$4 -> uk.co.mevanspn.imgext.k:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void stateChanged(javax.swing.event.ChangeEvent) -> stateChanged
+uk.co.mevanspn.imgext.MainForm$5 -> uk.co.mevanspn.imgext.f:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void itemStateChanged(java.awt.event.ItemEvent) -> itemStateChanged
+uk.co.mevanspn.imgext.MainForm$6 -> uk.co.mevanspn.imgext.e:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void actionPerformed(java.awt.event.ActionEvent) -> actionPerformed
+uk.co.mevanspn.imgext.MainForm$7 -> uk.co.mevanspn.imgext.h:
+    uk.co.mevanspn.imgext.MainForm this$0 -> a
+    void actionPerformed(java.awt.event.ActionEvent) -> actionPerformed
+uk.co.mevanspn.imgext.PicCompressor -> uk.co.mevanspn.imgext.PicCompressor:
+    void main(java.lang.String[]) -> main
+uk.co.mevanspn.imgext.YCCBlock -> uk.co.mevanspn.imgext.a:
+    int[] lum -> a
+    int low_lum -> b
+    int high_lum -> c
+    int cr -> d
+    int cb -> e
+    int x -> f
+    int y -> g
+    int w -> h
+    int h -> i
+    int[][] lum_pre -> j
+    int[][] cb_pre -> k
+    int[][] cr_pre -> l
+    int getWidth() -> a
+    int getHeight() -> b
+    float getCr() -> c
+    float getCb() -> d
+    int[] getDecompressedSamples(int,int) -> a
+    void generateBlock(int[]) -> a

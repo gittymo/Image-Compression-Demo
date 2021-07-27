@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- JNLP for ImageCompressionDemo -->
+
+<jnlp spec="1.0+" codebase="http://www.mevanspn.co.uk/htdocs/downloads" href="ImageCompressionDemo.jnlp">
+	<information>
+		<title>Image Compression Demo</title>
+		<vendor>Morgan Evans</vendor>
+		<description>Demonstrates the use of fixed length YCrCb image data for lossy image compression.</description>
+		<homepage href="http://www.mevanspn.co.uk/projects/ImgCompDemo.htm" />
+		<description kind="short">Demonstration on lossy image compression.</description>
+		<offline-allowed/>
+	</information>
+	<resources>
+		<jar href="ImageCompressionDemo.jar" />
+		<j2se version="1.6+"
+	      href="http://java.sun.com/products/autodl/j2se"/>
+	</resources>
+	<application-desc main-class="uk/co/mevanspn/imgext/PicCompressor" />
+</jnlp>

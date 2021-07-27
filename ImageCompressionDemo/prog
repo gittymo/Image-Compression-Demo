@@ -1,0 +1,9 @@
+-injars       ImageCompressionDemo.jar
+-outjars      ICD.jar
+-libraryjars  <java.home>/lib/rt.jar
+-printmapping proguard.map
+
+-keep public class uk.co.mevanspn.imgext.PicCompressor {
+    public static void main(java.lang.String[]);
+}
+
